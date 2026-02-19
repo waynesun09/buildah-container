@@ -19,7 +19,7 @@ COPY dockerfile-json dockerfile-json
 WORKDIR /app/dockerfile-json
 RUN go build -tags=dfrunsecurity -o dockerfile-json
 
-FROM quay.io/konflux-ci/task-runner:1.2.0@sha256:fbfcb48f2d05e7436830382c7ba079493d3426f5ebdffa4b87fee4229551d4c0
+FROM quay.io/konflux-ci/task-runner:1.4.1@sha256:d9feec6f2ce9b10cfb76b45ea14f83b5ed9f231de7d6083291550aebe8eb09ea
 
 LABEL \
     org.opencontainers.image.url="https://quay.io/konflux-ci/buildah-task" \
